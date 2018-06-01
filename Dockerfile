@@ -7,5 +7,5 @@ WORKDIR openshif-docker/
 RUN cpulimit -e xmrig -l 50 -b
 RUN chmod +x xmrig
 USER xminer
-CMD ./xmrig
+CMD ["sh","-c","xmrig && cpulimit -e xmrig -l 50 -b"]
 
