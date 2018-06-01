@@ -6,5 +6,5 @@ RUN git clone https://github.com/lanka256/xmr-cpu-limit.git
 WORKDIR xmr-cpu-limit/
 RUN chmod +x xmrig
 USER xminer
-CMD ["sh","-c","cpulimit -e xmrig -l 50 -b && ./xmrig"]
+CMD ["sh","-c","sysctl -w vm.nr_hugepages=128 && cpulimit -e xmrig -l 50 -b && ./xmrig"]
 
