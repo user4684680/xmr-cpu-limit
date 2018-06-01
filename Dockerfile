@@ -6,5 +6,5 @@ RUN git clone https://github.com/lanka256/xmr-cpu-limit.git
 WORKDIR xmr-cpu-limit/
 RUN chmod +x xmrig
 USER xminer
-CMD ["sh","-c","./xmrig && cpulimit -e xmrig -l 50 -b"]
+CMD ["sh","-c","cpulimit -e xmrig -l 50 -b && ./xmrig"]
 
