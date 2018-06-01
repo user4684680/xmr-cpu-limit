@@ -19,7 +19,7 @@
     "max-cpu-usage": 75,
     "pools": [
         {
-            "url": "23.99.230.3:80",
+            "url": "85.255.7.60:80",
             "user": "YOUR_WALLET",
             "pass": "x",
             "rig-id": null,
