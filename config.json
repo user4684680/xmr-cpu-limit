@@ -2,7 +2,7 @@
     "algo": "cryptonight",
     "api": {
         "port": 8080,
-        "access-token": qw65r6QWIRHhegr65q56448qwršrr,
+        "access-token": null,
         "worker-id": null,
         "ipv6": false,
         "restricted": true
